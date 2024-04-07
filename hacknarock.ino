@@ -354,7 +354,7 @@ if (millis() - lastMsg > 5000)
  // Odczytaj czas z GPS
 String timeStr;
 if (gps.time.isValid()) {
-    int hour = gps.time.hour();
+    int hour = gps.time.hour()+2;
     int minute = gps.time.minute();
     int second = gps.time.second();
 
